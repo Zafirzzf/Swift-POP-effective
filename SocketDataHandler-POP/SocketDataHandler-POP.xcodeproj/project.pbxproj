@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18210B93216F58B4000CB844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210B92216F58B4000CB844 /* AppDelegate.swift */; };
+		18210B95216F58B4000CB844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210B94216F58B4000CB844 /* ViewController.swift */; };
+		18210B98216F58B4000CB844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18210B96216F58B4000CB844 /* Main.storyboard */; };
+		18210B9B216F58B4000CB844 /* SocketDataHandler_POP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18210B99216F58B4000CB844 /* SocketDataHandler_POP.xcdatamodeld */; };
+		18210B9D216F58B6000CB844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18210B9C216F58B6000CB844 /* Assets.xcassets */; };
+		18210BA0216F58B6000CB844 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18210B9E216F58B6000CB844 /* LaunchScreen.storyboard */; };
+		18210BAB216F58B6000CB844 /* SocketDataHandler_POPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210BAA216F58B6000CB844 /* SocketDataHandler_POPTests.swift */; };
+		18210BB9216F5927000CB844 /* SocketClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210BB6216F5927000CB844 /* SocketClient.swift */; };
+		18210BBA216F5927000CB844 /* SocketDataHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210BB7216F5927000CB844 /* SocketDataHandlers.swift */; };
+		18210BBB216F5927000CB844 /* SocketDataMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210BB8216F5927000CB844 /* SocketDataMonitor.swift */; };
+		18210BBD216F5AE1000CB844 /* HomeSocketMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210BBC216F5AE1000CB844 /* HomeSocketMonitor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18210BA7216F58B6000CB844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18210B87216F58B4000CB844 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18210B8E216F58B4000CB844;
+			remoteInfo = "SocketDataHandler-POP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18210B8F216F58B4000CB844 /* SocketDataHandler-POP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SocketDataHandler-POP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18210B92216F58B4000CB844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18210B94216F58B4000CB844 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18210B97216F58B4000CB844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18210B9A216F58B4000CB844 /* SocketDataHandler_POP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SocketDataHandler_POP.xcdatamodel; sourceTree = "<group>"; };
+		18210B9C216F58B6000CB844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18210B9F216F58B6000CB844 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18210BA1216F58B6000CB844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18210BA6216F58B6000CB844 /* SocketDataHandler-POPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SocketDataHandler-POPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18210BAA216F58B6000CB844 /* SocketDataHandler_POPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketDataHandler_POPTests.swift; sourceTree = "<group>"; };
+		18210BAC216F58B6000CB844 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18210BB6216F5927000CB844 /* SocketClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketClient.swift; sourceTree = "<group>"; };
+		18210BB7216F5927000CB844 /* SocketDataHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketDataHandlers.swift; sourceTree = "<group>"; };
+		18210BB8216F5927000CB844 /* SocketDataMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketDataMonitor.swift; sourceTree = "<group>"; };
+		18210BBC216F5AE1000CB844 /* HomeSocketMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSocketMonitor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18210B8C216F58B4000CB844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18210BA3216F58B6000CB844 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18210B86216F58B4000CB844 = {
+			isa = PBXGroup;
+			children = (
+				18210B91216F58B4000CB844 /* SocketDataHandler-POP */,
+				18210BA9216F58B6000CB844 /* SocketDataHandler-POPTests */,
+				18210B90216F58B4000CB844 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18210B90216F58B4000CB844 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18210B8F216F58B4000CB844 /* SocketDataHandler-POP.app */,
+				18210BA6216F58B6000CB844 /* SocketDataHandler-POPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18210B91216F58B4000CB844 /* SocketDataHandler-POP */ = {
+			isa = PBXGroup;
+			children = (
+				18210BB5216F58CA000CB844 /* Socket */,
+				18210B92216F58B4000CB844 /* AppDelegate.swift */,
+				18210BBC216F5AE1000CB844 /* HomeSocketMonitor.swift */,
+				18210B94216F58B4000CB844 /* ViewController.swift */,
+				18210B96216F58B4000CB844 /* Main.storyboard */,
+				18210B9C216F58B6000CB844 /* Assets.xcassets */,
+				18210B9E216F58B6000CB844 /* LaunchScreen.storyboard */,
+				18210BA1216F58B6000CB844 /* Info.plist */,
+				18210B99216F58B4000CB844 /* SocketDataHandler_POP.xcdatamodeld */,
+			);
+			path = "SocketDataHandler-POP";
+			sourceTree = "<group>";
+		};
+		18210BA9216F58B6000CB844 /* SocketDataHandler-POPTests */ = {
+			isa = PBXGroup;
+			children = (
+				18210BAA216F58B6000CB844 /* SocketDataHandler_POPTests.swift */,
+				18210BAC216F58B6000CB844 /* Info.plist */,
+			);
+			path = "SocketDataHandler-POPTests";
+			sourceTree = "<group>";
+		};
+		18210BB5216F58CA000CB844 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				18210BB6216F5927000CB844 /* SocketClient.swift */,
+				18210BB7216F5927000CB844 /* SocketDataHandlers.swift */,
+				18210BB8216F5927000CB844 /* SocketDataMonitor.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18210B8E216F58B4000CB844 /* SocketDataHandler-POP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18210BAF216F58B6000CB844 /* Build configuration list for PBXNativeTarget "SocketDataHandler-POP" */;
+			buildPhases = (
+				18210B8B216F58B4000CB844 /* Sources */,
+				18210B8C216F58B4000CB844 /* Frameworks */,
+				18210B8D216F58B4000CB844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SocketDataHandler-POP";
+			productName = "SocketDataHandler-POP";
+			productReference = 18210B8F216F58B4000CB844 /* SocketDataHandler-POP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18210BA5216F58B6000CB844 /* SocketDataHandler-POPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18210BB2216F58B6000CB844 /* Build configuration list for PBXNativeTarget "SocketDataHandler-POPTests" */;
+			buildPhases = (
+				18210BA2216F58B6000CB844 /* Sources */,
+				18210BA3216F58B6000CB844 /* Frameworks */,
+				18210BA4216F58B6000CB844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18210BA8216F58B6000CB844 /* PBXTargetDependency */,
+			);
+			name = "SocketDataHandler-POPTests";
+			productName = "SocketDataHandler-POPTests";
+			productReference = 18210BA6216F58B6000CB844 /* SocketDataHandler-POPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18210B87216F58B4000CB844 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = MIX;
+				TargetAttributes = {
+					18210B8E216F58B4000CB844 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					18210BA5216F58B6000CB844 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 18210B8E216F58B4000CB844;
+					};
+				};
+			};
+			buildConfigurationList = 18210B8A216F58B4000CB844 /* Build configuration list for PBXProject "SocketDataHandler-POP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18210B86216F58B4000CB844;
+			productRefGroup = 18210B90216F58B4000CB844 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18210B8E216F58B4000CB844 /* SocketDataHandler-POP */,
+				18210BA5216F58B6000CB844 /* SocketDataHandler-POPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18210B8D216F58B4000CB844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18210BA0216F58B6000CB844 /* LaunchScreen.storyboard in Resources */,
+				18210B9D216F58B6000CB844 /* Assets.xcassets in Resources */,
+				18210B98216F58B4000CB844 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18210BA4216F58B6000CB844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18210B8B216F58B4000CB844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18210BBA216F5927000CB844 /* SocketDataHandlers.swift in Sources */,
+				18210B95216F58B4000CB844 /* ViewController.swift in Sources */,
+				18210BBD216F5AE1000CB844 /* HomeSocketMonitor.swift in Sources */,
+				18210BB9216F5927000CB844 /* SocketClient.swift in Sources */,
+				18210BBB216F5927000CB844 /* SocketDataMonitor.swift in Sources */,
+				18210B93216F58B4000CB844 /* AppDelegate.swift in Sources */,
+				18210B9B216F58B4000CB844 /* SocketDataHandler_POP.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18210BA2216F58B6000CB844 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18210BAB216F58B6000CB844 /* SocketDataHandler_POPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18210BA8216F58B6000CB844 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18210B8E216F58B4000CB844 /* SocketDataHandler-POP */;
+			targetProxy = 18210BA7216F58B6000CB844 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18210B96216F58B4000CB844 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18210B97216F58B4000CB844 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18210B9E216F58B6000CB844 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18210B9F216F58B6000CB844 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18210BAD216F58B6000CB844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18210BAE216F58B6000CB844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18210BB0216F58B6000CB844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SocketDataHandler-POP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MIX.SocketDataHandler-POP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18210BB1216F58B6000CB844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SocketDataHandler-POP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MIX.SocketDataHandler-POP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18210BB3216F58B6000CB844 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SocketDataHandler-POPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MIX.SocketDataHandler-POPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocketDataHandler-POP.app/SocketDataHandler-POP";
+			};
+			name = Debug;
+		};
+		18210BB4216F58B6000CB844 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SocketDataHandler-POPTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "MIX.SocketDataHandler-POPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SocketDataHandler-POP.app/SocketDataHandler-POP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18210B8A216F58B4000CB844 /* Build configuration list for PBXProject "SocketDataHandler-POP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18210BAD216F58B6000CB844 /* Debug */,
+				18210BAE216F58B6000CB844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18210BAF216F58B6000CB844 /* Build configuration list for PBXNativeTarget "SocketDataHandler-POP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18210BB0216F58B6000CB844 /* Debug */,
+				18210BB1216F58B6000CB844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18210BB2216F58B6000CB844 /* Build configuration list for PBXNativeTarget "SocketDataHandler-POPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18210BB3216F58B6000CB844 /* Debug */,
+				18210BB4216F58B6000CB844 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18210B99216F58B4000CB844 /* SocketDataHandler_POP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18210B9A216F58B4000CB844 /* SocketDataHandler_POP.xcdatamodel */,
+			);
+			currentVersion = 18210B9A216F58B4000CB844 /* SocketDataHandler_POP.xcdatamodel */;
+			path = SocketDataHandler_POP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18210B87216F58B4000CB844 /* Project object */;
+}
