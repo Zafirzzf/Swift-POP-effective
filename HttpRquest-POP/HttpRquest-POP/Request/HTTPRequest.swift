@@ -11,7 +11,7 @@ import Alamofire
 
 typealias Dict = [String: Any]
 
-protocol Request: class {
+protocol Request {
     
     // The type we expect to end up
     associatedtype ExpectedType

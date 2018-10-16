@@ -14,7 +14,6 @@ extension Request {
     func load(handler: @escaping (NetResult<ExpectedType>) -> Void) {
         
         let path = RequestConfig.host + self.path.rawValue
-        parameter.toCommonAction(action: self.action.rawValue)
         
         let manager = Alamofire.SessionManager(
             configuration: {

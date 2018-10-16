@@ -10,7 +10,7 @@ import Foundation
 class HomeRequest {
     
     /// An Example
-    class LoadList: PostRequest {
+    struct LoadList: PostRequest {
         typealias ExpectedType = List
         var path: RequestConfig.Path = .home
         var action: RequestConfig.Action = .getList
