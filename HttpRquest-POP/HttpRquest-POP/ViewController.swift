@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let request = HomeRequest.self
     override func viewDidLoad() {
         super.viewDidLoad()
         loadListData()
@@ -17,8 +18,12 @@ class ViewController: UIViewController {
     }
     
     func loadListData() {
-        HomeRequest.LoadList(page: 1, pageSize: 1).load { (result) in
-            print(result.error)
+        request.LoadList(page: 1, pageSize: 1).load { (result) in
+            if let error = result.error {
+                
+                return
+            }
+            let lisa = result.value
         }
     }
 }

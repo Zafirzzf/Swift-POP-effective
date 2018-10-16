@@ -15,12 +15,12 @@ enum NetResult<V> {
         self = error == nil ? NetResult.value(value!) : .error(error!)
     }
     
-    var value: V? {
+    var value: V {
         switch self {
         case .value(let value):
             return value
         case .error:
-            return nil
+            fatalError("You can't get value when error occurred")
         }
     }
     
