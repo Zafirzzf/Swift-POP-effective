@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import Alamofire
+
+class RequestManager {
+    static let manager = Alamofire.SessionManager(
+        configuration: {
+            let config = URLSessionConfiguration.default
+            config.timeoutIntervalForRequest = 15
+            return config
+    }())
+}

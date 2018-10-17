@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180A92A82176D2B900D1A47C /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A92A72176D2B900D1A47C /* RequestManager.swift */; };
 		18210B22216F34BE000CB844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210B21216F34BE000CB844 /* AppDelegate.swift */; };
 		18210B24216F34BE000CB844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210B23216F34BE000CB844 /* ViewController.swift */; };
 		18210B27216F34BE000CB844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18210B25216F34BE000CB844 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* Begin PBXFileReference section */
 		01B2413A6F3C47A86354811C /* Pods-HttpRquest-POPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HttpRquest-POPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HttpRquest-POPTests/Pods-HttpRquest-POPTests.release.xcconfig"; sourceTree = "<group>"; };
 		076DD701CB73AD2FE43C56A7 /* Pods_HttpRquest_POP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HttpRquest_POP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		180A92A72176D2B900D1A47C /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		18210B1E216F34BE000CB844 /* HttpRquest-POP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HttpRquest-POP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18210B21216F34BE000CB844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18210B23216F34BE000CB844 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,10 +104,10 @@
 			isa = PBXGroup;
 			children = (
 				18210B44216F34D7000CB844 /* Request */,
-				18210B21216F34BE000CB844 /* AppDelegate.swift */,
 				18210B4D216F39CE000CB844 /* HomeRequest.swift */,
 				18210B4F216F39E9000CB844 /* List.swift */,
 				18210B23216F34BE000CB844 /* ViewController.swift */,
+				18210B21216F34BE000CB844 /* AppDelegate.swift */,
 				18210B25216F34BE000CB844 /* Main.storyboard */,
 				18210B2B216F34C0000CB844 /* Assets.xcassets */,
 				18210B2D216F34C0000CB844 /* LaunchScreen.storyboard */,
@@ -128,6 +130,7 @@
 			children = (
 				18210B45216F352D000CB844 /* HTTPRequest.swift */,
 				18210B49216F369D000CB844 /* HTTPRequest+Load.swift */,
+				180A92A72176D2B900D1A47C /* RequestManager.swift */,
 				18210B4B216F3861000CB844 /* NetResult.swift */,
 				18210B47216F35EE000CB844 /* RequestConfig.swift */,
 			);
@@ -323,6 +326,7 @@
 				18210B4C216F3861000CB844 /* NetResult.swift in Sources */,
 				18210B24216F34BE000CB844 /* ViewController.swift in Sources */,
 				18210B4A216F369D000CB844 /* HTTPRequest+Load.swift in Sources */,
+				180A92A82176D2B900D1A47C /* RequestManager.swift in Sources */,
 				18210B22216F34BE000CB844 /* AppDelegate.swift in Sources */,
 				18210B4E216F39CE000CB844 /* HomeRequest.swift in Sources */,
 			);

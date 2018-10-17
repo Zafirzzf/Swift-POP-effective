@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     func loadListData() {
         
-        request.LoadList(page: 1, pageSize: 1).load { (result) in
+        HomeRequest.LoadList(page: 1, pageSize: 1).load { (result) in
             if let error = result.error {
                 
                 return

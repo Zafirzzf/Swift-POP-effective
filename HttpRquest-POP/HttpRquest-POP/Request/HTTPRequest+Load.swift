@@ -15,14 +15,7 @@ extension Request {
         
         let path = RequestConfig.host + self.path.rawValue
         
-        let manager = Alamofire.SessionManager(
-            configuration: {
-                let config = URLSessionConfiguration.default
-                config.timeoutIntervalForRequest = 15
-                return config
-        }())
-        
-        manager.request(path, method: method, parameters: parameter, encoding: encoding, headers: headers).responseJSON { (response) in
+        RequestManager.manager.request(path, method: method, parameters: parameter, encoding: encoding, headers: headers).responseJSON {  (response) in
             let result = response.result
             if let _ = result.error {
                 handler(NetResult(value: nil, error: .serviceLost))
