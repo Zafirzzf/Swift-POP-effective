@@ -14,13 +14,9 @@ class HomeSocketMonitor {
     class UserInfo: SocketDataMonitor {
         typealias ResponseType = String
         var dataType: SocketDataType = .userInfo
-        unowned var dispose: SocketDispose
         var parse: (AnyObject) -> String? = { body in
             guard let result = body as? Dict else { return nil }
             return result["name"] as! String
-        }
-        init(dispose: SocketDispose) {
-            self.dispose = dispose
         }
     }
 }

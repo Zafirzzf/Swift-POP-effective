@@ -16,12 +16,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         /// 模拟发送数据
         SocketClient().receiveDatas()
-    
-        HomeSocketMonitor.UserInfo(dispose: socketDispose).receiveData { (result) in
+        
+        HomeSocketMonitor.UserInfo().receiveData(dispose: socketDispose) { (result) in
             print(result)
         }
     }
 
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        navigationController?.pushViewController(SecondViewController(), animated: true)
+    }
 }
 

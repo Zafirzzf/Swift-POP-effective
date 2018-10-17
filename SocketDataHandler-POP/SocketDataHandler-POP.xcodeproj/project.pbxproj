@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180A92AC2176F0CB00D1A47C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180A92AB2176F0CB00D1A47C /* SecondViewController.swift */; };
 		18210B93216F58B4000CB844 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210B92216F58B4000CB844 /* AppDelegate.swift */; };
 		18210B95216F58B4000CB844 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18210B94216F58B4000CB844 /* ViewController.swift */; };
 		18210B98216F58B4000CB844 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18210B96216F58B4000CB844 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180A92AB2176F0CB00D1A47C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		18210B8F216F58B4000CB844 /* SocketDataHandler-POP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SocketDataHandler-POP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18210B92216F58B4000CB844 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18210B94216F58B4000CB844 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,9 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				18210BB5216F58CA000CB844 /* Socket */,
-				18210B92216F58B4000CB844 /* AppDelegate.swift */,
 				18210BBC216F5AE1000CB844 /* HomeSocketMonitor.swift */,
 				18210B94216F58B4000CB844 /* ViewController.swift */,
+				180A92AB2176F0CB00D1A47C /* SecondViewController.swift */,
+				18210B92216F58B4000CB844 /* AppDelegate.swift */,
 				18210B96216F58B4000CB844 /* Main.storyboard */,
 				18210B9C216F58B6000CB844 /* Assets.xcassets */,
 				18210B9E216F58B6000CB844 /* LaunchScreen.storyboard */,
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180A92AC2176F0CB00D1A47C /* SecondViewController.swift in Sources */,
 				18210BBA216F5927000CB844 /* SocketDataHandlers.swift in Sources */,
 				18210B95216F58B4000CB844 /* ViewController.swift in Sources */,
 				18210BBD216F5AE1000CB844 /* HomeSocketMonitor.swift in Sources */,
