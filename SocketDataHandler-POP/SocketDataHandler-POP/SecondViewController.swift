@@ -13,6 +13,7 @@ class SecondViewController: UIViewController {
     deinit {
         print("销毁")
     }
+    
     let dispose = SocketDispose()
     override func viewDidLoad() {
         super.viewDidLoad()
