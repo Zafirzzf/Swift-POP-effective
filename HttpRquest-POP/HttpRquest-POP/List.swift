@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct List {
+struct List: MappableModel {
     var name: String
     var age: Int
 }

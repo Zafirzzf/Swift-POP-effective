@@ -8,18 +8,23 @@
 
 import Foundation
 class HomeRequest {
-    
     /// An Example
-    class LoadList: PostRequest {
-        typealias ExpectedType = List
+    
+    struct SimpleData: GetRequest {
+        var path: RequestConfig.Path = .userInfo
+        var action: RequestConfig.Action = .getList
+        var parameter: [String : Any] = [:]
+        var parse: ([String : Any]) -> Bool? = {
+            $0["data"] as? Bool ?? false
+        }
+    }
+    
+    struct LoadList: PostRequest {
         var path: RequestConfig.Path = .home
         var action: RequestConfig.Action = .getList
         var parameter: [String : Any] = [:]
         
-        var parse: (Dict) -> List? = { root in
-            /// JSON Analysis
-            return List(name: "a", age: 3)
-        }
+        var parse: ([String: Any]) -> List? = List.dataParse
         
         init(page: Int, pageSize: Int) {
             parameter["page"] = page

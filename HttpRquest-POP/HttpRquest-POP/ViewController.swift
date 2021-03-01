@@ -18,13 +18,11 @@ class ViewController: UIViewController {
     }
     
     func loadListData() {
-        
-        HomeRequest.LoadList(page: 1, pageSize: 1).load { (result) in
-            if let error = result.error {
-                
-                return
-            }
-            let list = result.value
+        HomeRequest.LoadList(page: 1, pageSize: 1).load { result in
+            
+        }
+        HomeRequest.SimpleData().load { result in
+            
         }
     }
 }

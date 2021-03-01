@@ -9,19 +9,18 @@
 import Foundation
 import Alamofire
 
+/// 扩展发起请求与回调的方式- 闭包/Observable/Promise
 extension Request {
     /// Common load function
     func load(handler: @escaping (NetResult<ExpectedType>) -> Void) {
-        
         let path = RequestConfig.host + self.path.rawValue
-        
-        RequestManager.manager.request(path, method: method, parameters: parameter, encoding: encoding, headers: headers).responseJSON {  (response) in
+        Alamofire.request(path, method: method == .get ? .get : .post, parameters: parameter, headers: headers).responseJSON {  (response) in
             let result = response.result
             if let _ = result.error {
                 handler(NetResult(value: nil, error: .serviceLost))
                 return
             }
-            guard let resultDict = result.value as? Dict else {
+            guard let resultDict = result.value as? [String: Any] else {
                 handler(NetResult(value: nil, error: .rootDataNotDict))
                 return
             }
@@ -33,4 +32,19 @@ extension Request {
             handler(NetResult(value: targetData, error: nil))
         }
     }
+    
+    /// 返回Observable序列
+//    func fetch() -> Observable<ExpectedType> {
+//        return Single<ExpectedType>.create { single in
+//            RequestManager.manager.request(self.pathStr, method: self.method, parameters: self.parameter, encoding: self.encoding, headers: self.headers).responseJSON(completionHandler: { (response) in
+//                let myResult = self.handleResponse(result: response.result)
+//                if let error = myResult.error {
+//                    single(.error(error))
+//                } else {
+//                    single(.success(myResult.value!))
+//                }
+//            })
+//            return Disposables.create()
+//        }.asObservable()
+//    }
 }
